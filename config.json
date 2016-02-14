@@ -3,39 +3,13 @@
   "title": "Mmsfrontend",
   "description": "The best project ever.",
   "version": "0.1.0",
-  "js_safe_name": "mmsfrontend",
-  "js_test_safe_name": "mmsfrontend",
-  "devDependencies": {
-	"browser-sync": "latest",
-	"forever": "latest",
-	"forever-monitor": "latest",
-	"grunt": "latest",
-	"gulp": "latest",
-	"gulp-autoprefixer": "latest",
-	"gulp-bower": "latest",
-	"gulp-cat": "latest",
-	"gulp-connect": "latest",
-	"gulp-csslint": "latest",
-	"gulp-filter": "latest",
-	"gulp-jade": "latest",
-	"gulp-livereload": "latest",
-	"gulp-newer": "latest",
-	"gulp-notify": "latest",
-	"gulp-plumber": "latest",
-	"gulp-sass": "latest",
-	"gulp-sourcemaps": "latest",
-	"gulp-watch": "latest",
-	"require-dir": "latest",
-	"main-bower-files": "latest",
-	"jsmart": "latest",
-	"jade": "latest"
-  },
+
   "generator": {
     "name": "basic-template",
     "path": "/Users/andreaswalter/Work/Web/gulpsetup/basic-template"
   },
   "server": {
-    "livereload": 35729,
+
     "development": {
       "watchOptions": {
           "debounceDelay": 500
@@ -68,9 +42,9 @@
     "src": "./dev/jade/**/*.jade",
     "dest": "./app"
   },
-  "sass": {
-    "src": "../dev/sass/**/*.scss",
-    "dest": "../app/_assets/css",
+  "scss": {
+    "src": "./dev/scss/**/*.scss",
+    "dest": "./app/_assets/css",
     "options": {
       "precision": 10,
       "noCache": true,
@@ -80,6 +54,10 @@
       "sourcemap": true,
       "sourcemapPath": "./maps"
     }
+  },
+
+  "autoprefixer": {
+        "browsers": ["last 3 version"]
   },
 
   "build": {
