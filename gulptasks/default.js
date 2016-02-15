@@ -9,7 +9,7 @@ gulp.task('browser-sync', function() {
   browserSync(config.development);
 });
 
-gulp.task('default', ['browser-sync'], function () {
+gulp.task('default', ['browser-sync', 'webpack:watch'], function () {
   livereload.listen(config.livereload);
   gulp.watch( "dev/jade/**/*.jade", ['jade']);
   gulp.watch( "dev/scss/**/*.scss", ['scss']);
