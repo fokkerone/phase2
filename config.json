@@ -8,8 +8,11 @@
     "name": "basic-template",
     "path": "/Users/andreaswalter/Work/Web/gulpsetup/basic-template"
   },
+  "root": {
+    "src": "./dev",
+    "dest": "./app"
+  },
   "server": {
-
     "development": {
       "watchOptions": {
           "debounceDelay": 500
@@ -55,11 +58,20 @@
       "sourcemapPath": "./maps"
     }
   },
-
   "autoprefixer": {
         "browsers": ["last 3 version"]
   },
 
+  "js": {
+    "src": "javascripts",
+    "dest": "javascripts",
+    "extractSharedJs": true,
+    "entries": {
+      "app": ["./app.js"],
+      "page": ["./page.js"]
+    },
+    "extensions": ["js"]
+  },
   "build": {
     "jade": {
     "baseDir": "../dev/jade/",
