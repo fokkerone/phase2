@@ -1,17 +1,16 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
-var livereload  = require('gulp-livereload');
-var config      = require('../config').server
+var config      = require('../config')
 
 
 gulp.task('browser-sync', function() {
-  browserSync(config.development);
+  browserSync(config.server.development);
 });
 
+
 gulp.task('default', ['browser-sync', 'webpack:watch'], function () {
-  livereload.listen(config.livereload);
-  gulp.watch( "dev/jade/**/*.jade", ['jade']);
-  gulp.watch( "dev/scss/**/*.scss", ['scss']);
+  gulp.watch( config.jade.src, ['jade']);
+  gulp.watch( config.scss.src, ['scss']);
   gulp.watch( "dev/fonts/**", ['copyfontassets']);
 });
