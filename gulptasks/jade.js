@@ -43,11 +43,8 @@ gulp.task('jade', function() {
     )
     .pipe(changed(config.jade.dest, {extension: '.html'}))
     .pipe(cache('jade'))
-//    .pipe(jadeInheritance({basedir: config.jade.baseDir}))
-    // .pipe( plumber( {
-    //   errorHandler: handleErrors
-    // }))
-
+    .pipe(jadeInheritance({basedir: config.jade.baseDir}))
+  
 
 
 
