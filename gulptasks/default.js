@@ -14,3 +14,8 @@ gulp.task('default', ['browser-sync', 'webpack:watch'], function () {
   gulp.watch( config.scss.src, ['scss']);
   gulp.watch( "dev/fonts/**", ['copyfontassets']);
 });
+
+
+gulp.task('mongo', ['webpack:watch'], function () {
+
+});
