@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class World extends React.Component {
-  render() {
-    return <h1>World</h1>
-  }
+const App = function(){
+  return <div>Hi there boy</div>
 }
 
-ReactDOM.render(<World/>, document.getElementById('world'));
+ReactDOM.render(<App/>, document.getElementById('world'));
