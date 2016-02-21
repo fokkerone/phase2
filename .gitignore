@@ -1,2 +1,4 @@
 node_modules
 app
+*hot-update.js
+*.hot-update.json

@@ -1,7 +1,7 @@
 var config = require('../config')
 if(!config.js) return
 
-var webpackConfig = require('../webpack.config')
+var webpackConfig = require('../lib/webpackconf')
 var gulp          = require('gulp')
 var logger        = require('../lib/compileLogger')
 var webpack       = require('webpack')
