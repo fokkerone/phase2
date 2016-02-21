@@ -16,6 +16,6 @@ gulp.task('default', ['browser-sync', 'webpack:watch'], function () {
 });
 
 
-gulp.task('mongo', ['webpack:watch'], function () {
+gulp.task('wp', ['webpack:watch'], function () {
 
 });
