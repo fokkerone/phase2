@@ -70,6 +70,7 @@
       "app": ["./app.js"],
       "page": ["./page.js"]
     },
+    "bundleName" : "moppelchen.js",
     "extensions": ["js"]
   },
   "build": {
